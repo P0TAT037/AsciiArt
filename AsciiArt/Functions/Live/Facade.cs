@@ -10,7 +10,7 @@ namespace AsciiArt.Functions.Live
     {
         public static void LiveCapture(int width = 100)
         {
-            LiveCapture(width);
+            Live.LiveCapture(width);
         }
     }
 }
