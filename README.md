@@ -24,7 +24,7 @@
 
 ### Draw Text
 
-- `-asciiart t [text] {fontname}`
+- `-asciiart -t [text] {fontname}`
 
   - New fonts can be added and used by providing its path in the `{fontname}` parameter
 
