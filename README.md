@@ -1,4 +1,4 @@
-# AsciiArtEasters
+# AsciiArt
 
 ## Command Line Options
 
@@ -8,7 +8,7 @@
 
 ### Show help
 
-- `asciiart -h` Or `asciiart --help`
+- `asciiart -h` or `asciiart --help`
 
 ### Draw an image
 
@@ -20,7 +20,7 @@
 
 ### Live Capture
 
-- `asciiart -l {video width}` OR `asciiart --live {video width}`
+- `asciiart -l {video width}` or `asciiart --live {video width}`
 
 ### Draw Text
 
@@ -30,11 +30,11 @@
 
   - [Download new fonts [here](https://github.com/xero/figlet-fonts/tree/master)]
 
-- `--fonts`
+- `asciiart --fonts`
   - Lists all font names
 - `asciiart -t -r [text]`
-  - draw text with random font
+  - Draw text with a random font
 - `asciiart -t -d [text]`
-  - draw text with the default decoration
+  - Draw text with the default decoration
 - `asciiart -t --decorate [text]`
-  - draw text with a custom decoration
+  - Draw text with a custom decoration
