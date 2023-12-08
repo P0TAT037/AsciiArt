@@ -1,4 +1,4 @@
-# AsciiArt
+# AsciiArtEasters
 
 ## Command Line Options
 
@@ -8,23 +8,23 @@
 
 ### Show help
 
-- `--help` Or `-h`
+- `asciiart -h` Or `asciiart --help`
 
 ### Draw an image
 
-- ` -i [image path] {image width} `
+- `asciiart -i [image path] {image width}`
 
 ### Draw a video
 
-- `-v [path] {width} {sleep}`
+- `asciiart -v [path] {video width} {sleep between frames in ms}`
 
 ### Live Capture
 
-- `-l {width}` OR `--live {width}`
+- `asciiart -l {video width}` OR `asciiart --live {video width}`
 
 ### Draw Text
 
-- `-t [text] {fontname}`
+- `-asciiart t [text] {fontname}`
 
   - New fonts can be added and used by providing its path in the `{fontname}` parameter
 
@@ -32,9 +32,9 @@
 
 - `--fonts`
   - Lists all font names
-- `-t -r [text]`
-  - Text with random font
-- `-t -d [text]`
-  - Text with the default decoration
-- `-t --decorate [text]`
-  - Text with custom decoration
+- `asciiart -t -r [text]`
+  - draw text with random font
+- `asciiart -t -d [text]`
+  - draw text with the default decoration
+- `asciiart -t --decorate [text]`
+  - draw text with a custom decoration
