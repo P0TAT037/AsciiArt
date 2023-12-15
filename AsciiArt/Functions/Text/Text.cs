@@ -555,74 +555,6 @@ namespace AsciiArt.Functions.Text
                     }
                 }
             }
-            //else if(decoration.Effect.Behavior == ParticleBehavior.FlyRight)
-            //{
-            //    TheBeginnig:
-
-            //    var resultLines = result.Split('\n');
-
-            //    var effectResultBuilder = new StringBuilder();
-            //    var particleCount = Random.Shared.Next((int)(resultLines.Length * 0.7), (int)(resultLines.Length * 0.9));
-
-            //    // 0     1     2       3                4
-            //    // i,    j,    step,   decorationChar,  isFinished
-            //    int[,] particles = new int[particleCount,5];
-            //    for (int i = 0; i < particleCount; i++)
-            //    {
-            //        particles[i, 0] = Random.Shared.Next(1, resultLines[0].Length - 1);
-            //        particles[i, 1] = Random.Shared.Next(1, resultLines.Length - 1);
-            //        particles[i, 2] = Random.Shared.Next(1, (int)(resultLines[0].Length * 0.2));
-            //        particles[i, 3] = 0;
-            //        particles[i, 4] = 0;
-            //    }
-
-            //    StringBuilder strBuilder;
-
-            //    while (true)
-            //    {
-            //        resultLines = result.Split("\n");
-            //        // replace every [i,j] with decorationCharacter
-            //        for (int i = 0; i < particles.Length / 5; i++)
-            //        {
-            //            var decoratoinChar = decoration.Effect.DecorationChars[Random.Shared.Next(0, decoration.Effect.DecorationChars.Count)];
-            //            strBuilder = new StringBuilder(resultLines[particles[i, 1]]);
-            //            strBuilder.Replace(' ', decoratoinChar, particles[i, 0], 1);
-            //            resultLines[particles[i, 1]] = strBuilder.ToString();
-            //        }
-
-            //        effectResultBuilder.AppendJoin('\n', resultLines);
-            //        Console.WriteLine(effectResultBuilder.ToString());
-
-            //        Thread.Sleep(sleep);
-            //        effectResultBuilder.Clear();
-            //        Console.Clear();
-            //        Console.SetCursorPosition(0, 0);
-            //        bool timeToStartOver = false;
-
-            //        // move particles
-            //        for (int i = 0; i<particleCount;i++)
-            //        {
-            //            var newPosition = particles[i, 0] + particles[i,2];
-            //            if (newPosition >= resultLines.Length-1) 
-            //            {
-            //                particles[i, 0] = Random.Shared.Next(1, resultLines[0].Length - 1);
-            //                particles[i, 1] = Random.Shared.Next(1, resultLines.Length - 1);
-            //                particles[i, 2] = Random.Shared.Next(1, (int)(resultLines[0].Length * 0.2));
-            //                timeToStartOver &= Convert.ToBoolean(particles[i,4]);
-            //            }
-            //            else
-            //            {
-            //                particles[i, 0] = newPosition;
-            //                particles[i, 4] = 1;
-            //            }
-            //        }
-
-            //        if (timeToStartOver)
-            //        {
-            //            goto TheBeginnig;
-            //        }
-            //    }
-            //}
             else if (decoration.Effect.Behavior == ParticleBehavior.FlyLeft)
             {
             TheBeginnig:
@@ -732,8 +664,6 @@ namespace AsciiArt.Functions.Text
             }
 
         }
-
-        
 
     }
 }
